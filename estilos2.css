@@ -1,0 +1,66 @@
+h1{
+	font-family: monospace;
+	color: tomato;
+	line-height: 1.5;
+	border-width:50px;
+	font-weight: bold;
+	text-align: center;
+	background: darkgreen;
+	
+	position: relative;
+}
+
+.uno{
+	font-family: monospace;
+	color: white;
+	line-height: 1.5;
+	min-height: 50px;
+	min-width: 10px;
+	max-width: 625px;
+	padding:.5em;
+	font-weight: bold;
+	text-align: left;
+	background: darkgreen;
+	position: relative;
+}
+
+.dos{
+	font-family: monospace;
+	color: white;
+	line-height: 1.5;
+	min-height: 50px;
+	min-width: 10px;
+	max-width: 100px;
+	padding:.5em;
+	font-weight: bold;
+	text-align: left;
+	background: darkgreen;
+	position: relative;
+}
+
+.tres{
+	font-family: monospace;
+	color: white;
+	line-height: 1.5;
+	min-height: 50px;
+	min-width: 10px;
+	max-width: 150px;
+	padding:.5em;
+	font-weight: bold;
+	text-align: left;
+	background: darkgreen;
+	position: relative;
+}
+
+section{
+	
+}
+
+a{
+	top:50px;
+	color:white;
+	position:relative;
+	font
+	font-family: Gill Sans Extrabold, sans-serif;
+}
+
