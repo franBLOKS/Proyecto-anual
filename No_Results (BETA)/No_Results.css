@@ -1,0 +1,15 @@
+h1{
+    /*Ubicacion del texto*/
+    text-align: center;
+    margin-top: 8vh;
+
+    /*Forma y color del texto*/
+    font-family: 'Patua One', cursive;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 10vh;
+    color: rgb(27, 27, 27);
+
+    /*Otros*/
+    user-select: none;
+}
