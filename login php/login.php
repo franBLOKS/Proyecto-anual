@@ -22,9 +22,10 @@
 <html>
     <head>
         <title>Bienvenido</title>
+        <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css?family-Roboto" rel-"stylesheet">
-        <link rel="stylesheet" href="assets/css">
         </head>
 <body>
 <?php if(!empty($message)): ?>
