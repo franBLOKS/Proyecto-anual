@@ -14,7 +14,11 @@
             <h1>título página</h1>
 
             <div class="div1">
-                <input type="text" id="barra" placeholder="Buscar por ingrediente..."><input type="button" id="boton" value="Buscar">
+                <form method="POST" action="http://localhost/proyecto/busquedaBeta.php">
+                <input type="text" id="barra" name="busqueda" placeholder="Buscar por ingrediente...">
+                <input type="submit" id="boton">
+
+                </form>
             </div>
             
             <p id="texto1">¿Eres mayor de edad?<input type="checkbox" id="checkbox"><label for="checkbox"></label></p>
