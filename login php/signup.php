@@ -20,7 +20,7 @@
     <meta charset="utf-8">
     <title>Registrarse</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">    
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <?php if(!empty($message)): ?>
