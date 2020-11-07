@@ -52,7 +52,7 @@ div{
 }
 
 body {
-    background-color: rgb(231, 225, 225);
+    background-color: #838383;
   }
   input[type="text"], input[type="password"]{ 
     outline: none; 
