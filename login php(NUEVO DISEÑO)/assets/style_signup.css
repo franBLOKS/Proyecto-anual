@@ -57,7 +57,8 @@ body {
   }
 
   input[type="submit"]:hover {
-    background-color: #00b8eb;
+    background-color: white;
+    -webkit-text-stroke: 1px green;
   }
 
   header {
