@@ -10,7 +10,7 @@
 
                 //echo "<p>Conexión exitosa.</p>";
             }else{
-                echo "<p>Cagaste, pa.</p>";
+                echo "<p>No se ha podido conectar con la base de datos.</p>";
             }
         
             $receta = $_POST['busqueda'];
@@ -24,14 +24,13 @@
             $datos = mysqli_query($conexion,$consulta);
 
             while ($fila=mysqli_fetch_array($datos)){
-                echo "<p>";
-                echo "-"; //un separador
+                
                 echo $fila ["NOMBRE_RECETA"];
-                echo "-"; // un separador
+               
                 echo $fila ["DIFICULTAD"];
-                echo "-"; // un separador
+              
                 echo $fila ["PROCEDIMIENTO"];
-                echo "<p>";
+              
             }
 
         ?>
@@ -42,7 +41,7 @@
 
     <head>
         <meta charset="utf-8"/>
-		<title>Pene</title>
+		<title>Búsqueda</title>
     </head>
     <body>
         
