@@ -31,12 +31,14 @@
 <?php if(!empty($message)): ?>
 <p> <?= $message ?></p>
 <?php endif; ?>
-    <h1>Inicio de secion</h1>
+    <h1>Inicio de sesión</h1>
     <form action="login.php" method="post">
         <input type="text" name="email" placeholder="Ingrese su mail">
         <input type="password" name="contraseña" placeholder="Ingrese su contraseña">
-        <input type="submit" value="send">
+        <center><input type="submit" value="send"></center>
+        <center><a href="index.php">Atras</a></center>
+        
     </from>
-    <a href="index.php">Atras</a>
+
 </body>
 </html>

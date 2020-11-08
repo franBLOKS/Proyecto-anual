@@ -27,12 +27,13 @@
       <p> <?= $message ?></p>
     <?php endif; ?>
     <h1>Registrarse</h1>
-    <span>or <a href="login.php">Login</a></span>
+    
     <form action="signup.php" method="POST">
-      <input name="email" type="text" placeholder="Inserte su corres">
-      <input name="password" type="password" placeholder="Inserte una contraseña">
+      <input name="email" type="text" placeholder="Ingrese su correo">
+      <input name="password" type="password" placeholder="Ingrese su contraseña">
       <input name="confirm_password" type="password" placeholder="Confirme su contraseña">
-      <input type="submit" value="Submit">
+      <center><input type="submit" value="Submit"></center>
+      <center><span><a href="login.php">Login</a></span></center>
     </form>
   </body>
 </html>

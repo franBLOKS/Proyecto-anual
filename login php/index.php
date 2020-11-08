@@ -11,7 +11,7 @@
 <body>
 
 <div>
-<h1>Por favor registrate o inicia sesion</h1>
+<h1>Por favor, registrate o inicia sesión</h1>
 
 <a href="login.php">Iniciar sesion</a>
 <a href="signup.php">Registrarse</a>
