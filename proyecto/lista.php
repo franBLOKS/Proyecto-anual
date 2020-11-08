@@ -4,7 +4,7 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="esteticaL.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="style_lista.css" media="screen">
         <meta charset="utf-8">
         
     </head>
