@@ -23,25 +23,37 @@
             <h1>Ingrese los ingredientes que desee utilizar</h1>
 
             <div class="div1">
+                <center>
                 <form method="POST" action="http://localhost/proyecto/lista.php">
                 <input type="text" id="barra" name="busqueda" placeholder="Buscar por ingrediente...">
                 <input type="submit" id="boton">
-                </form>
-            </div>
-            
-            <p id="texto1">¿Eres mayor de edad?<input type="checkbox" id="checkbox"><label for="checkbox"></label></p>
-            
-            <div class="div2">
-                <h4>SELECCIONE DIFICULTAD</h4>
+                <p id="texto1">¿Eres mayor de edad?<input type="checkbox" id="checkbox"><label for="checkbox"></label></p>
+                <div class="div2">
+                    <h4>SELECCIONE DIFICULTAD</h4>
+                    <center><input type="checkbox" id="boton1">
+                    <label for="boton1" id="etiqueta1">Fácil</label>
+                    <input type="checkbox" id="boton2">
+                    <label for="boton2" id="etiqueta2">Normal</label>
+                    <input type="checkbox" id="boton3">
+                    <label for="boton3" id="etiqueta3">Dificil</label>
+                    
+                
                 <!--<input type="button" class="botones" value="Fácil" name="facil">
                 <input type="button" class="botones" id="boton-central" value="Normal" name="normal">
                 <input type="button" class="botones" value="Difícil" name="dificil"></br>-->
-                <center>
-                    <input type="checkbox" id="boton1">
-                    <label for="boton1">Fácil</label>
-                </center>
+                
                 <input type="button" class="especial" value="¡Ver todas las recetas!" id="recetas" onclick="recetas()">
+                </div>
+                </center>
             </div>
+            </center>
+                </form>
+            
+            
+            
+            
+            
+            
             
     </body>
 </html>
