@@ -41,10 +41,11 @@
     font-size: 2.6vh;
     color:white;
     font-family: 'Trebuchet MS', sans-serif;
+    vertical-align: top;
 
     /*Forma y tamaño de la barra*/
     width: 40vh;
-    height: 8.5vh;
+    height: 7vh;
     margin-right: 6vh;
 
     /*Colores de la barra y del texto*/
@@ -62,7 +63,7 @@
 
     /*Forma y tamaño del boton*/
     width: 6vh;
-    height: 8.5vh;
+    height: 6vh;
 
     /*Imagen del boton*/
     background-image: url(https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-icono-de-b-squeda-by-vexels.png);
@@ -76,6 +77,7 @@
     
     /*Otros*/
     outline: none;
+    margin-top: 2vh;
 }
 
 #texto1{

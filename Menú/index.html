@@ -15,14 +15,18 @@
            
             function facil(){
                 alert("Este es un mensajule para informarle que, efectivamente, presionó un botón que, efectivamente, no hace nada");
+                var facil = "Fácil";
+
             }
             
             function normal(){
                 alert("Este es un mensajule para informarle que, efectivamente, presionó un botón que, efectivamente, no hace nada");
+                var normal = "Normal";
             }
 
             function dificil(){
                 alert("Este es un mensajule para informarle que, efectivamente, presionó un botón que, efectivamente, no hace nada");
+                var dificil = "Difícil";
             }
         
 
@@ -39,14 +43,13 @@
             <div class="div1">
                 <form method="POST" action="http://localhost/proyecto/lista.php">
                 <input type="text" id="barra" name="busqueda" placeholder="Buscar por ingrediente...">
-                <input type="submit" id="boton">
+                <input type="button" id="boton">
                 </form>
             </div>
             
             <p id="texto1">¿Eres mayor de edad?<input type="checkbox" id="checkbox"><label for="checkbox"></label></p>
             
             <div class="div2">
-
                 <h4>SELECCIONE DIFICULTAD</h4>
                 <input type="button" class="botones" value="Fácil" name="facil" onclick="facil()">
                 <input type="button" class="botones" id="boton-central" value="Normal" name="normal" onclick="normal()">

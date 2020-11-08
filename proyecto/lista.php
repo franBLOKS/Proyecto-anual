@@ -56,7 +56,7 @@
                     <div> 
                     <img id="imagen" src="tumbleweed.png">
                     </div>
-                    <a href="C:\xampp\htdocs\Menú\index.html"> Volver? </a>
+                    <a href="C:\Users\Nahuel\Documents\GitHub\Proyecto-anual\Menú\index.html"> Volver? </a>
                     <?php
                 }
                  
