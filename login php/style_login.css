@@ -1,0 +1,48 @@
+h1{
+    /*Margenes del titulo*/
+    margin: 4vh 2vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*Propiedades del texto*/
+    font-family: 'Patua One', cursive;
+    font-weight: 500;
+    font-size: 4.5vh;
+    text-align:center;
+}
+
+body {
+    background-color: rgb(223, 223, 223);
+}
+  input[type="text"], input[type="password"]{ 
+    outline: none; 
+    padding: 20px;
+    display: block;
+    width: 300px;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    margin: 20px auto;
+  }
+  input[type="submit"] {
+    color: #fff;
+    background: #939393;
+    width: 320px;
+    border-radius: 3px;
+    cursor: pointer;
+
+    margin: auto;
+  }
+  input[type="submit"]:hover {
+    background-color: #00b8eb;
+  }
+  header {
+    border-bottom: 2px solid #eee;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  header a {
+    text-decoration: none;
+    color: #333;
+  }
