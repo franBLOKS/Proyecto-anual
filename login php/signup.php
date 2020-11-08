@@ -2,7 +2,7 @@
   require 'database.php';
   $message = '';
   if (!empty($_POST['email']) && !empty($_POST['password'])) {
-    $sql = "INSERT INTO users (email, password) VALUES (:email, :password)";
+    $sql = "INSERT INTO usuarios (email, password) VALUES (:email, :password)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':email', $_POST['email']);
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
@@ -30,7 +30,7 @@
     <h1>Registrarse</h1>
     
     <form action="signup.php" method="POST">
-      <input name="email" type="text" placeholder="Ingrese su correo">
+      <input name="email" type="text" placeholder="Ingrese un nombre">
       <input name="password" type="password" placeholder="Ingrese su contraseña">
       <input name="confirm_password" type="password" placeholder="Confirme su contraseña">
       <center><input type="submit" value="Inscribirse"></center>
