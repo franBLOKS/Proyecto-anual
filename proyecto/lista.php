@@ -52,7 +52,12 @@
                 }
 
                 if($noresult==0){
-                    ?> <h5 class="titulo">No encontramos resultados.</h5>" <?php
+                    ?> <h5 class="titulo">No pudimos encontrar coincidencias. ¡Lo sentimos!</h5>
+                    <div> 
+                    <img id="imagen" src="tumbleweed.png">
+                    </div>
+                    <a href="C:\xampp\htdocs\Menú\index.html"> Volver? </a>
+                    <?php
                 }
                  
                  ?>

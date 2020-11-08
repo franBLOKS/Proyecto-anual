@@ -15,7 +15,7 @@ div{
     background-color: black;
 
     /*Color y forma del borde*/
-    border: rgb(87, 86, 84) 0.4vh solid;
+    border: black 0vh solid;
     border-radius: 2.0vh;
     height: 25vh;
     width: 90vh;
@@ -33,13 +33,20 @@ a{
     display:inline-block;
     padding-left: 17.5vh;
     padding-right: auto;
+    padding-top:4vh;
     float:center;
     
 
     /*Propiedades del texto*/
     font-family: 'Patua One', cursive;
     font-weight: 500;
-    font-size: 2,5vh;
+    font-size: 4vh;
+    color:black;
+    -webkit-text-stroke: 0.2px cyan;
+}
+
+a:hover{
+    color:white;
 }
 
   h1{
@@ -91,9 +98,16 @@ p{
     outline: none;
 }
 
+img [src="tumbleweed.jpg"]{
+    border-radius: 50px solid;
+    margin:auto;
+    
+}
+
 body{
     /*Color de la pagina*/
     background-color: rgb(93,93,93);
+
 }
 
 .titulo{
@@ -114,5 +128,7 @@ body{
     /*Otros*/
     user-select: none;
 }
+
+
 
 }
