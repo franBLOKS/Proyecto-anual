@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        
         <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="esteticaL.css" media="screen">
         <meta charset="utf-8">
-        
+
     </head>
-    <body>
+    <body>    
         <h1 class="titulo">Resultados...</h1>
 
+        <div>
+        <input type="submit" value="busqueda" href="C:/Users/franBLOKS/Desktop/6to%20C/So/Proyecto-anual/Menú%20(BETA)/index.html">
+        </div>
+        
          <?php
         
         $servername = "localhost";
