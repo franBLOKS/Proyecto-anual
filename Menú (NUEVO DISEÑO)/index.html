@@ -1,0 +1,73 @@
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style_cascada.css" type="text/css" media="screen">
+
+        <script>
+
+            window.onload = function(){
+
+                document.getElementsByName("facil").onclick=facil;
+                document.getElementsByName("normal").onclick=normal;
+                document.getElementsByName("dificil").onclick=dificil;
+
+                function facil(){
+
+                    var facil = "Fácil";
+
+                    $.ajax({
+                        url: 'http://localhost/proyecto/lista.php'
+
+
+                    })
+
+                }
+
+                function normal(){
+
+                    var normal = "Normal";
+
+                }
+
+                function dificil(){
+
+
+                    var dificil = "Difícil";
+
+                }
+
+            }
+
+        </script>
+
+        <title>Menú</title>
+
+    </head>
+
+    <body>
+    
+            <h1>Busque la receta que desee</h1>
+
+            <div class="div1">
+                <form method="POST" action="http://localhost/proyecto/lista.php">
+                <input type="text" id="barra" name="busqueda" placeholder="Buscar por ingrediente...">
+                <input type="submit" id="boton">
+                </form>
+            </div>
+            
+            <p id="texto1">¿Eres mayor de edad?<input type="checkbox" id="checkbox"><label for="checkbox"></label></p>
+            
+            <div class="div2">
+
+                <h4>SELECCIONE DIFICULTAD</h4>
+                <input type="button" class="botones" value="Fácil" name="facil">
+                <input type="button" class="botones" id="boton-central" value="Normal" name="normal">
+                <input type="button" class="botones" value="Difícil" name="dificil">
+
+            </div>
+            
+    </body>
+</html>
