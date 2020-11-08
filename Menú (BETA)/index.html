@@ -8,8 +8,7 @@
 
         <script type="text/javascript">
             function recetas(){
-                alert("dale puto");
-                window.location.replace("http://localhost/proyecto/lista.php");
+                window.location.assign("http://localhost/proyecto/lista.php");
                 }
 
             window.onload = function(){
@@ -18,7 +17,7 @@
                 document.getElementByID("facil").onclick=facil;
                 document.getElementByID("normal").onclick=normal;
                 document.getElementByID("dificil").onclick=dificil;
-                //document.getElementByID("recetas").onclick=recetas;//
+                //document.getElementByID("recetas").onclick=recetas;
 
                 function facil(){
 
@@ -56,7 +55,7 @@
 
     <body>
     
-            <h1>Busque la receta que desee</h1>
+            <h1>Ingrese los ingredientes para buscar las recetas</h1>
 
             <div class="div1">
                 <form method="POST" action="http://localhost/proyecto/lista.php">
@@ -73,7 +72,7 @@
                 <input type="button" class="botones" value="Fácil" name="facil">
                 <input type="button" class="botones" id="boton-central" value="Normal" name="normal">
                 <input type="button" class="botones" value="Difícil" name="dificil"></br></br>
-                <input type="button" class="botones" value="Recetas" id="recetas" onclick="recetas()">
+                <input type="button" class="botones" value="Ver todas las recetas" id="recetas" onclick="recetas()">
             </div>
             
     </body>
