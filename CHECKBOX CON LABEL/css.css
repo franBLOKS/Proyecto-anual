@@ -1,0 +1,37 @@
+input[type="checkbox"]{display: none;} /*Oculta el checkbox*/
+
+label{
+    /*Texto del label*/
+    user-select: none;
+    font-size: 4vh;
+    color: #BBE1FA;
+    
+    /*Ubicación del texto en el label*/
+    vertical-align: middle;
+    display: table-cell;
+    
+    /*Fondo del label*/
+    background-color: #3282B8;
+
+    /*Bordes del label*/
+    border-radius: 2vh;
+    border: solid 2px #0F4C75;
+
+    /*Tamaño del Label*/
+    width: 20vh;
+    height: 12vh;
+}
+
+label:hover{
+    background-color: salmon; /*Cambia el color del label cuando le pasas por encima con el mouse*/
+}
+
+[type="checkbox"]:checked + label{
+    background-color: salmon; /*Mantiene el cambio de color cuando presionas el botón*/
+} 
+
+[type="checkbox"]:checked:hover + label{
+    background-color: salmon; /*Mantiene el cambio de color cuando presionas el botón*/
+    color: green; /*Cambia el color del texto cuando el checkbox esta presionado y le pasas por encima con el mouse*/
+    border-color: green; /*Cambia el color del borde cuando el checkbox esta presionado y le pasas por encima con el mouse*/
+}
