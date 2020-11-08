@@ -24,19 +24,19 @@
         <title>Bienvenido</title>
         <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="assets\style_login.css">
         <meta charset="utf-8">
         </head>
 <body>
 <?php if(!empty($message)): ?>
 <p> <?= $message ?></p>
 <?php endif; ?>
-    <h1>Inicio de sesion</h1>
+    <h1>Inicio de sesión:</h1>
     <form action="login.php" method="post">
-        <input type="text" name="email" placeholder="Ingrese su mail">
-        <input type="password" name="contraseña" placeholder="Ingrese su contraseña">
-        <input type="submit" value="send">
+        <input type="text" name="email" placeholder="Ingrese su correo electronico:">
+        <input type="password" name="contraseña" placeholder="Ingrese su contraseña:">
+        <center><input type="submit" value="Enviar"></center>
     </from>
-    <a href="index.php">Atras</a>
+    <center><a href="index.php">Atras</a></center>
 </body>
 </html>

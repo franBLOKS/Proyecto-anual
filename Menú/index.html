@@ -6,18 +6,24 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style_cascada.css" type="text/css" media="screen">
 
-        <script>
+        <script type="text/javascript">
+            function recetas(){
+                alert("dale puto");
+                window.location.replace("http://localhost/proyecto/lista.php");
+                }
 
             window.onload = function(){
 
-                document.getElementsByName("facil").onclick=facil;
-                document.getElementsByName("normal").onclick=normal;
-                document.getElementsByName("dificil").onclick=dificil;
+
+                document.getElementByID("facil").onclick=facil;
+                document.getElementByID("normal").onclick=normal;
+                document.getElementByID("dificil").onclick=dificil;
+                //document.getElementByID("recetas").onclick=recetas;//
 
                 function facil(){
 
                     var facil = "Fácil";
-
+                    alert("dale puto");
                     $.ajax({
                         url: 'http://localhost/proyecto/lista.php'
 
@@ -27,19 +33,20 @@
                 }
 
                 function normal(){
-
+                    alert("dale puto");
                     var normal = "Normal";
 
                 }
 
                 function dificil(){
-
-
+                    alert("dale puto");
                     var dificil = "Difícil";
 
                 }
+                
 
             }
+            
 
         </script>
 
@@ -49,7 +56,7 @@
 
     <body>
     
-            <h1>Busque la receta que desee</h1>
+            <h1>Ingrese los ingredientes que desee utilizar</h1>
 
             <div class="div1">
                 <form method="POST" action="http://localhost/proyecto/lista.php">
@@ -65,8 +72,8 @@
                 <h4>SELECCIONE DIFICULTAD</h4>
                 <input type="button" class="botones" value="Fácil" name="facil">
                 <input type="button" class="botones" id="boton-central" value="Normal" name="normal">
-                <input type="button" class="botones" value="Difícil" name="dificil">
-
+                <input type="button" class="botones" value="Difícil" name="dificil"></br>
+                <input type="button" class="especial" value="¡Ver todas las recetas!" id="recetas" onclick="recetas()">
             </div>
             
     </body>

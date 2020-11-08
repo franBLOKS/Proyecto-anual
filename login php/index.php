@@ -4,17 +4,17 @@
         <title>Bienvenido</title>
         <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="assets\style_index.css">
         <meta charset="utf-8">
         
     </head>
 <body>
 
-<div>
-<h1>Por favor, registrate o inicia sesión</h1>
 
-<a href="login.php">Iniciar sesion</a>
-<a href="signup.php">Registrarse</a>
+<h1>Por favor, registrate o inicia sesión</h1>
+<div>
+	<a class="BOTON" href="login.php" >Iniciar sesión</a>
+	<a class="BOTON2" href="signup.php" >Registrarte</a>
 </div>
 
 </body>

@@ -19,9 +19,8 @@
   <head>
     <meta charset="utf-8">
     <title>Registrarse</title>
-    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="assets\style_signup.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">    
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <?php if(!empty($message)): ?>
@@ -33,8 +32,8 @@
       <input name="email" type="text" placeholder="Ingrese su correo">
       <input name="password" type="password" placeholder="Ingrese su contraseña">
       <input name="confirm_password" type="password" placeholder="Confirme su contraseña">
-      <center><input type="submit" value="Inscribirse"></center>
-      <center><span class="boton"><a href="login.php" >¿Ya tenes cuenta? ¡Inicia sesión!</a></span></center>
+      <center><input type="submit" value="Submit"></center>
+      <center><span><a href="login.php">Login</a></span></center>
     </form>
   </body>
 </html>
