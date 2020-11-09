@@ -8,9 +8,12 @@
 
         <script type="text/javascript">
 
-            function recetas(){
+           function recetas() {
+
                 window.location.assign("http://localhost/proyecto/lista.php");
-            }
+            
+
+            };
 
         </script>
 
@@ -25,30 +28,25 @@
             <div class="div1">
                 <center>
                 <form method="POST" action="http://localhost/proyecto/lista.php">
-                <input type="text" id="barra" name="busqueda" placeholder="Buscar por ingrediente...">
+                <input type="text" id="barra" name="busqueda" placeholder="Buscar por ingrediente..." required="">
                 <input type="submit" id="boton">
                 <p id="texto1">¿Eres mayor de edad?<input type="checkbox" id="checkbox"><label for="checkbox"></label></p>
                 <div class="div2">
                     <h4>SELECCIONE DIFICULTAD</h4>
-                    <center><input type="checkbox" id="boton1">
+                    <center><input type="checkbox" id="boton1" name="facil" value="Fácil">
                     <label for="boton1" id="etiqueta1">Fácil</label>
-                    <input type="checkbox" id="boton2">
+                    <input type="checkbox" id="boton2" name="normal" value="Normal">
                     <label for="boton2" id="etiqueta2">Normal</label>
-                    <input type="checkbox" id="boton3">
-                    <label for="boton3" id="etiqueta3">Dificil</label>
-                    
+                    <input type="checkbox" id="boton3" name="dificil" value="Difícil">
+                    <label for="boton3" id="etiqueta3">Difícil</label>
                 
-                <!--<input type="button" class="botones" value="Fácil" name="facil">
-                <input type="button" class="botones" id="boton-central" value="Normal" name="normal">
-                <input type="button" class="botones" value="Difícil" name="dificil"></br>-->
-                
-                <input type="button" class="especial" value="¡Ver todas las recetas!" id="recetas" onclick="recetas()">
                 </div>
                 </center>
             </div>
             </center>
                 </form>
-            
+                <center><input type="button" class="especial" value="¡Ver todas las recetas!" id="recetas" onclick="recetas()"></center>
+                
             
             
             

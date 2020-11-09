@@ -29,12 +29,17 @@
         }
     
         $receta = $_POST['busqueda'];
+        $facil = $_POST['facil'];
+        $normal = $_POST['normal'];
+        $dificil = $_POST['dificil'];
 
-        $consulta = "SELECT * FROM receta WHERE INGREDIENTES LIKE '%$receta%'";
+        if($facil==''and $normal=='' and $dificil==''){
+            $consulta = "SELECT * FROM receta WHERE INGREDIENTES LIKE '%$receta%'";
+        }else{
+            $consulta = "SELECT * FROM receta WHERE INGREDIENTES LIKE '%$receta%' AND DIFICULTAD = '$facil' OR DIFICULTAD = '$normal' OR DIFICULTAD = '$dificil'";
+        }
 
         $datos = mysqli_query($conexion,$consulta);
-
-        //$datos=($_GET["datos"]);
 
             $noresult=0;
 
