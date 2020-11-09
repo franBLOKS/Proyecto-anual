@@ -34,8 +34,6 @@ a{
     padding-left: 17.5vh;
     padding-right: auto;
     padding-top:4vh;
-    float:center;
-    
 
     /*Propiedades del texto*/
     font-family: 'Patua One', cursive;
@@ -129,6 +127,3 @@ body{
     user-select: none;
 }
 
-
-
-}
