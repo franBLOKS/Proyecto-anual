@@ -1,4 +1,5 @@
 <?php
+
 function connectDB(){
     $enlace = mysqli_connect("localhost","root","","usuarios");
     return $enlace; 
