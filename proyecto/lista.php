@@ -6,6 +6,24 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style_lista.css" media="screen">
         <meta charset="utf-8">
+
+        <style>
+            center{
+                background-color: #ECE20F;
+                /*Ubicacion*/
+                margin-top:3vh;
+                margin-left:3vh;
+                display: inline-block;
+
+                /*bordes*/
+                border: 1.05vh outset rgb(236, 226, 15);
+                border-radius: 1.1vh;
+
+                /*color del texto y del fondo*/
+                user-select: none;
+                outline: none;
+            }
+        </style>
         
     </head>
     <body>
@@ -33,6 +51,7 @@
         $normal = $_POST['normal'];
         $dificil = $_POST['dificil'];
 
+
         if($facil==''and $normal=='' and $dificil==''){
             $consulta = "SELECT * FROM receta WHERE INGREDIENTES LIKE '%$receta%'";
         }else{
@@ -52,7 +71,7 @@
                     
                      <form method="POST" action="http://127.0.0.1/Pagina_Receta(BETA)/Pagina_Receta.php">
                         <input type="hidden" name="receta" value="<?php echo htmlspecialchars($nombre);?>">
-                        <input type="submit" value="Ver receta">
+                        <center><input type="submit" value="Ver receta"></center>
                      </form>
                     </label>
                     
@@ -73,7 +92,7 @@
                     <?php
                 }
                 ?>
-                <a href="http://localhost/Menú/index.html"> Volver al menú de búsqueda </a>
+                
         
     </body>
 </html>
