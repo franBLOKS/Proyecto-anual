@@ -10,7 +10,7 @@
     if ($stmt->execute()) {
       $message = 'Nuevo usuario creado';
       echo '<script language="javascript">
-            document.location.href="C:/Users/franBLOKS/Desktop/6to%20C/So/Proyecto-anual/Menú/index.html";
+            document.location.href="index.html";
           </script>';
           
             } else {
