@@ -7,7 +7,24 @@
         <link rel="stylesheet" type="text/css" href="style_lista.css" media="screen">
         <meta charset="utf-8">
 
-                
+        <style>
+            center{
+                background-color: #ECE20F;
+                /*Ubicacion*/
+                margin-top:3vh;
+                margin-left:3vh;
+                display: inline-block;
+
+                /*bordes*/
+                border: 1.05vh outset rgb(236, 226, 15);
+                border-radius: 1.1vh;
+
+                /*color del texto y del fondo*/
+                user-select: none;
+                outline: none;
+            }
+        </style>
+        
     </head>
     <body>
 
@@ -33,17 +50,22 @@
         $facil = $_POST['facil'];
         $normal = $_POST['normal'];
         $dificil = $_POST['dificil'];
-
+        
+        $receta = "%$receta%";
 
         if($facil==''and $normal=='' and $dificil==''){
-            $consulta = "SELECT * FROM receta WHERE INGREDIENTES LIKE '%$receta%'";
+            $consulta = "SELECT * FROM receta WHERE INGREDIENTES LIKE ?";
         }else{
-            $consulta = "SELECT * FROM receta WHERE INGREDIENTES LIKE '%$receta%' AND (DIFICULTAD = '$facil' OR DIFICULTAD = '$normal' OR DIFICULTAD = '$dificil')";
+            $consulta = "SELECT * FROM receta WHERE INGREDIENTES LIKE ? AND (DIFICULTAD = '$facil' OR DIFICULTAD = '$normal' OR DIFICULTAD = '$dificil')";
         }
+        
+            $stmt = $conexion->prepare($consulta);
 
-        $datos = mysqli_query($conexion,$consulta);
-
-        //$datos=($_GET["datos"]);
+            $stmt->bind_param('s', $receta); 
+        
+            $stmt->execute();
+        
+            $datos = $stmt->get_result();
 
             $noresult=0;
 
@@ -54,7 +76,7 @@
                     
                      <form method="POST" action="http://127.0.0.1/Pagina_Receta(BETA)/Pagina_Receta.php">
                         <input type="hidden" name="receta" value="<?php echo htmlspecialchars($nombre);?>">
-                        <input type="submit" value="Ver receta">
+                        <center><input type="submit" value="Ver receta"></center>
                      </form>
                     </label>
                     
