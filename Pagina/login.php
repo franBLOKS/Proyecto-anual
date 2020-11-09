@@ -13,10 +13,6 @@
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
       $_SESSION['usuarios_id'] = $results['id'];
       header("Location: /php-login");
-      echo '<script language="javascript">
-            document.location.href="index.html";
-          </script>';
-          $message = 'peron.';
     } else {
       $message = 'Lo siento, pero esa cuenta no se encontro.';
     }
