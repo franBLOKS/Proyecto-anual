@@ -1,26 +1,40 @@
 <?php
-  session_start();
-  if (isset($_SESSION['usuarios_id'])) {
-    header('Location: /php-login');
-  }
-  require 'database.php';
-  if (!empty($_POST['email']) && !empty($_POST['password'])) {
-    $records = $conn->prepare('SELECT id, email, password FROM usuarios WHERE email = :email');
-    $records->bindParam(':email', $_POST['email']);
-    $records->execute();
-    $results = $records->fetch(PDO::FETCH_ASSOC);
-    $message = '';
-    if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
-      $_SESSION['usuarios_id'] = $results['id'];
-      header("Location: /php-login");
-      echo '<script language="javascript">
-            document.location.href="index.html";
-          </script>';
-          $message = 'peron.';
-    } else {
-      $message = 'Lo siento, pero esa cuenta no se encontro.';
+
+function connectDB(){
+    $enlace = mysqli_connect("localhost","root","","usuarios");
+    return $enlace; 
+}
+function disconnectDB($conexion){
+    $close= mysqli_close($conexion);
+}
+$nombre = $_POST["email"];
+$contra = $_POST["contraseña"];
+validar($nombre, $contra);
+function validar($nombre, $contra){
+$conexion = connectDB();
+$sql = "SELECT * FROM usuarios";
+mysqli_set_charset($conexion, "utf8"); 
+if(!$result = mysqli_query($conexion, $sql)) die();
+while($row = mysqli_fetch_array($result)) 
+{ 
+    $usuario=$row['email'];
+    $ct=password_verify($contra, $row['password']);
+    if($usuario == $nombre && $contra == $ct){
+        disconnectDB($conexion);
+        echo '<script language="javascript">
+        document.location.href="index.html";
+        </script>';
+        return;
+    }else if ($usuario == $nombre && $contra != $ct) {
+        echo "No se reconoce la cpntraseña";
+        disconnectDB($conexion);
+        return;
     }
-  }
+}
+disconnectDB($conexion);
+echo "No se reconoce el usuario";
+return;
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,12 +46,14 @@
         <meta charset="utf-8">
         </head>
 <body>
-<?php if(!empty($message)): ?>
-<p> <?= $message ?></p>
-<?php endif; ?>
+
+  
     <h1>Inicio de sesión:</h1>
+    <?php if(!empty($message)): ?>
+    <p> <?= $message ?></p>
+    <?php endif; ?>
     <form action="login.php" method="post">
-        <input type="text" name="email" placeholder="Ingrese su correo electronico:">
+        <input type="text" name="email" placeholder="Ingrese su nombre de usuario:">
         <input type="password" name="contraseña" placeholder="Ingrese su contraseña:">
         <center><input type="submit" value="Enviar"></center>
     </from>
