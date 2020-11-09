@@ -1,0 +1,180 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    /*Color de la pagina*/
+    background-color: rgb(93,93,93);
+}
+
+h1{
+    /*Ubicacion del texto*/
+    text-align: center;
+    margin: 10vh 0vh;
+
+    /*Forma del texto*/
+    font-family: 'Patua One', cursive;
+    font-weight: 300;
+    font-size: 10vh;
+    color:black;
+    -webkit-text-stroke: 0.5px cyan;
+
+    /*Otros*/
+    user-select: none;
+}
+
+#imagen1{
+    /*Ubicacion de la imagen*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*Tamaño de la imagen*/
+    height: 50vh;
+    width: 90vh;
+}
+
+#comentario{
+    /*Ubicacion*/
+    width: 90vh;
+    margin-left: 63vh;
+
+    /*Forma del texto*/
+    color:white;
+    -webkit-text-stroke: 0.5px orange;
+    font-weight: 300;
+    font-size: 3vh;
+
+    /*Otros*/
+    user-select: none;
+}
+
+#contenedor1{
+    /*Ubicacion del contenedor*/
+    margin-left: 63vh;
+    margin-top: 5vh;
+    /*Tamaño del contenedor*/
+}
+
+#contenedor2{
+    /*Ubicacion del contenedor*/
+    margin-left: 63vh;
+    margin-top: 5vh;
+    /*Tamaño del contendor*/
+}
+
+#subtitulo{
+    /*Forma del texto*/
+    font-family: 'Patua One', cursive;
+    color:black;
+    -webkit-text-stroke: 0.2px cyan;
+    font-weight: 300;
+    font-size: 5vh;
+}
+
+ul{
+    /*Tamaño del contenedor*/
+    width: 95vh;
+
+    /*Posicion del texto*/
+    margin-top: 2vh;
+    text-indent: 3.2vh;
+
+    /*Forma del texto*/
+    color:white;
+    -webkit-text-stroke: 0.5px orange;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 3vh;
+}
+
+ol{
+    /*Tamaño del contenedor*/
+    width: 95vh;
+
+    /*Posicion del texto*/
+    margin-top: 2vh;
+    margin-left: 3vh;
+
+    /*Forma del texto*/
+    color:white;
+    -webkit-text-stroke: 0.5px orange;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 3vh;
+}
+
+h3{
+    /*Ubicacion del texto*/
+    margin-left: 63vh;
+    margin-top: 5vh;
+
+    /*Forma del texto*/
+    font-family: 'Patua One', cursive;
+    color:black;
+    -webkit-text-stroke: 0.2px cyan;
+    font-weight: 200;
+    font-size: 3.5vh;
+}
+
+#contenedor3{
+    text-align: center;
+    margin-top: 1.3vh;
+    margin-bottom: 4vh;
+
+    color: black;
+    -webkit-text-stroke: 0.1px orange;
+    
+}
+
+.imagen2{
+    /*Ubicacion*/
+    width: 25vh;
+    height: 20vh;
+}
+
+#imagen2_cen{
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+.boton{
+    /*tamaño del boton*/
+    width: 25vh;
+
+    /*Propiedades del boton*/
+    background-color: black;
+    border: orange 2px solid;
+    border-radius: 1.1vh;
+    outline: none;
+    
+    /*Forma y propiedades del texto*/
+    font-family: 'Lato', sans-serif;
+    color: rgb(27, 27, 27);
+    font-weight: 700;
+    font-size: 2.7vh;
+}
+
+.boton:hover{
+    /*tamaño del boton*/
+    width: 25vh;
+
+    /*Propiedades del boton*/
+    background-color: black;
+    border: white 2px solid;
+    border-radius: 1.1vh;
+    outline: none;
+    
+    /*Forma y propiedades del texto*/
+    font-family: 'Lato', sans-serif;
+    color: white;
+    -webkit-text-stroke: 0.1px white;
+    font-weight: 700;
+    font-size: 2.7vh;
+}
+
+#boton_cen{
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
