@@ -13,6 +13,11 @@
 
     <body>
 
+        <?php
+        $receta = $_POST['receta'];
+        echo "El valor es: $receta";
+        ?>
+
         <h1>título receta</h1>
 
         <img src="imagenes_prueba/default.jpg" id="imagen1">
@@ -39,7 +44,7 @@
 
         </div>
         
-        <h3>Quizas te interese ver: </h3>
+        <h3>Quizás te interese ver: </h3>
 
         <div id="contenedor3">
 

@@ -1,0 +1,134 @@
+*{
+    /*Eliminamos margenes default del navegador*/
+    margin: 0%;
+    padding: 0%;
+}
+
+div{
+    /*Ubicacion del contendor*/
+    margin: auto;
+    margin-bottom: 1.2vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*Color del contenedor*/
+    background-color: black;
+
+    /*Color y forma del borde*/
+    border: black 0vh solid;
+    border-radius: 2.0vh;
+    height: 25vh;
+    width: 90vh;
+    
+    /*Color del texto del contenedor*/
+    color: rgb(27, 27, 27);
+
+    /*Otros*/
+    user-select: none;
+}
+
+a{
+    /*Margenes del titulo*/
+    margin: 2.5vh 2vh;
+    display:inline-block;
+    padding-left: 17.5vh;
+    padding-right: auto;
+    padding-top:4vh;
+    float:center;
+    
+
+    /*Propiedades del texto*/
+    font-family: 'Patua One', cursive;
+    font-weight: 500;
+    font-size: 4vh;
+    color:black;
+    -webkit-text-stroke: 0.2px cyan;
+}
+
+a:hover{
+    color:white;
+}
+
+  h1{
+    /*Margenes del titulo*/
+    margin: 4vh 2vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*Propiedades del texto*/
+    font-family: 'Patua One', cursive;
+    font-weight: 500;
+    font-size: 4.5vh;
+    text-align:center;
+}
+
+h2{
+    /*Margenes del titulo*/
+    margin: 2.5vh 2vh;
+
+    /*Propiedades del texto*/
+    font-family: 'Patua One', cursive;
+    font-weight: 500;
+    font-size: 4.5vh;
+    color:white;
+    -webkit-text-stroke: 1px orange;
+}
+
+p{
+    /*Margenes del texto*/
+    margin: 0vh 2vh;
+
+    /*Propiedades del texto*/
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 2vh;
+    color:yellow;
+}
+
+.boton{
+    /*Tamaño del boton*/
+    width: 90vh;
+    height: 4.3vh;
+
+    /*Colores del boton*/
+    border: none transparent;
+    background-color: transparent;
+
+    /*Otros*/
+    outline: none;
+}
+
+img [src="tumbleweed.jpg"]{
+    border-radius: 50px solid;
+    margin:auto;
+    
+}
+
+body{
+    /*Color de la pagina*/
+    background-color: rgb(93,93,93);
+
+}
+
+.titulo{
+    /*Ubicacion del texto*/
+    text-align: center;
+    margin-top: 8vh;
+    margin-bottom: 5vh;
+
+    /*Forma y color del texto*/
+    font-family: 'Patua One', cursive;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 10vh;
+    
+    -webkit-text-stroke: 1px cyan;
+
+
+    /*Otros*/
+    user-select: none;
+}
+
+
+
+}
