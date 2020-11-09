@@ -36,10 +36,12 @@
         if($facil==''and $normal=='' and $dificil==''){
             $consulta = "SELECT * FROM receta WHERE INGREDIENTES LIKE '%$receta%'";
         }else{
-            $consulta = "SELECT * FROM receta WHERE INGREDIENTES LIKE '%$receta%' AND DIFICULTAD = '$facil' OR DIFICULTAD = '$normal' OR DIFICULTAD = '$dificil'";
+            $consulta = "SELECT * FROM receta WHERE INGREDIENTES LIKE '%$receta%' AND (DIFICULTAD = '$facil' OR DIFICULTAD = '$normal' OR DIFICULTAD = '$dificil')";
         }
 
         $datos = mysqli_query($conexion,$consulta);
+
+        //$datos=($_GET["datos"]);
 
             $noresult=0;
 
@@ -61,7 +63,7 @@
                     <div> 
                     <img id="imagen" src="tumbleweed.png">
                     </div>
-                    <a href="C:\Users\Nahuel\Documents\GitHub\Proyecto-anual\Menú\index.html"> Volver? </a>
+                    <a href="http://localhost/Menú/index.html"> Volver al menú de búsqueda </a>
                     <?php
                 }
                  
