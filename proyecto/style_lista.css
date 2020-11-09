@@ -7,9 +7,10 @@
 div{
     /*Ubicacion del contendor*/
     margin: auto;
-    margin-bottom: 1.2vh;
+    margin-bottom: 3vh;
     margin-left: auto;
     margin-right: auto;
+
 
     /*Color del contenedor*/
     background-color: black;
@@ -25,6 +26,9 @@ div{
 
     /*Otros*/
     user-select: none;
+    padding-top: 5vh;
+    padding-left: 5vh;
+    padding-bottom: 5vh;
 }
 
 a{
@@ -62,7 +66,7 @@ a:hover{
 
 h2{
     /*Margenes del titulo*/
-    margin: 2.5vh 2vh;
+    margin: 3vh 2vh;
 
     /*Propiedades del texto*/
     font-family: 'Patua One', cursive;
@@ -83,6 +87,32 @@ p{
     color:yellow;
 }
 
+input[value="Ver receta"]{
+				
+                /*Ubicacion*/
+                margin-top:3vh;
+                margin-left:3vh;
+                margin-bottom: 500vh;
+                display: inline-block;
+
+                /*Propiedades del texto*/
+                font-family: 'Lato', sans-serif;
+                color:black;
+              	-webkit-text-stroke: 0.5px black;
+
+                /*bordes*/
+                border: 1.05vh outset rgb(236, 226, 15);
+                border-radius: 1.1vh;
+                padding-left:1vh;
+                padding-right:1vh;
+
+
+                /*color del texto y del fondo*/
+                user-select: none;
+                outline: none;
+                background-color: #ECE20F;
+}
+
 .boton{
     /*Tamaño del boton*/
     width: 90vh;
@@ -97,7 +127,6 @@ p{
 }
 
 img [src="tumbleweed.jpg"]{
-    border-radius: 50px solid;
     margin:auto;
     
 }

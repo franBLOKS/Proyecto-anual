@@ -7,24 +7,7 @@
         <link rel="stylesheet" type="text/css" href="style_lista.css" media="screen">
         <meta charset="utf-8">
 
-        <style>
-            center{
-                background-color: #ECE20F;
-                /*Ubicacion*/
-                margin-top:3vh;
-                margin-left:3vh;
-                display: inline-block;
-
-                /*bordes*/
-                border: 1.05vh outset rgb(236, 226, 15);
-                border-radius: 1.1vh;
-
-                /*color del texto y del fondo*/
-                user-select: none;
-                outline: none;
-            }
-        </style>
-        
+                
     </head>
     <body>
 
@@ -71,7 +54,7 @@
                     
                      <form method="POST" action="http://127.0.0.1/Pagina_Receta(BETA)/Pagina_Receta.php">
                         <input type="hidden" name="receta" value="<?php echo htmlspecialchars($nombre);?>">
-                        <center><input type="submit" value="Ver receta"></center>
+                        <input type="submit" value="Ver receta">
                      </form>
                     </label>
                     
