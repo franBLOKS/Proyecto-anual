@@ -37,6 +37,6 @@
         <input type="password" name="contraseña" placeholder="Ingrese su contraseña:">
         <center><input type="submit" value="Enviar"></center>
     </from>
-    <center><a href="index.php">Atras</a></center>
+    <center><a href="index.php" class="Atras">Atras</a></center>
 </body>
 </html>

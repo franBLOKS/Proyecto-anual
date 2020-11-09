@@ -13,8 +13,10 @@
 
 <h1>Por favor, registrate o inicia sesión</h1>
 <div>
+	<center>
 	<a class="BOTON" href="login.php" >Iniciar sesión</a>
-	<a class="BOTON2" href="signup.php" >Registrarte</a>
+	<a class="BOTON" href="signup.php" >Registrarte</a>
+	</center>
 </div>
 
 </body>
