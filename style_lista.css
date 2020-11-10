@@ -151,6 +151,7 @@ input[value="Ver receta"]:hover{
 
 img [src="tumbleweed.jpg"]{
     margin:auto;
+    border:transparent;
     
 }
 
