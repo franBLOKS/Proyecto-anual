@@ -1,0 +1,105 @@
+
+
+body {
+    background-color: rgb(93, 93, 93);
+    }
+
+  /*Titulo*/
+  h1{
+  /*Margenes del titulo*/
+    margin: 4vh 2vh;
+    margin-left: auto;
+    margin-right: auto;
+
+    /*Propiedades del texto*/
+    font-family: 'Patua One', cursive;
+    font-weight: 500;
+    font-size: 4.5vh;
+    -webkit-text-stroke: 1px white; /* width and color */
+    text-align:center;
+  }
+
+  input[type="text"], input[type="password"]{ 
+    outline: none; 
+    padding: 20px;
+    display: block;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    margin: 20px auto;
+  }
+  input[type="submit"] {
+    font-family: 'Patua One', cursive;
+    font-size: 3vh;
+    color: #fff;
+    background: #000000;
+    width: 340px;
+    height: 50px;
+    border-radius: 5px;
+    border-color:#000000;
+    margin-bottom: 5vh;
+    cursor: pointer;
+    -webkit-text-stroke: 1px gray;
+  }
+
+  .botones:hover{
+    input[type="submit"]{
+      background-color: white;
+    color: black;
+    -webkit-text-stroke: 0.5px green;
+    border-color:black;
+    }
+  }
+  input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+    -webkit-text-stroke: 0.5px green;
+    border-color:black;
+  }
+
+
+  /*Hipervinculo*/
+  a{
+    font-family: 'Lato', sans-serif;
+    width: 60vh;
+    height: 10vh;
+    border: cyan 1vh solid;
+    border-radius: 1vh;
+    padding-left:22vh;
+    padding-right:22vh;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    -webkit-text-stroke: 1px black;
+
+    /*Forma y tamaño del texto*/
+    font-size: 4vh;
+    font-weight: 100;
+
+    /*Color de los botones y del texto*/
+    color:black;
+    background-color: white;
+
+    /*Otros*/
+    outline: none;
+    margin-top:1%;
+
+  }
+
+  a:hover{
+  color:black;
+    background-color: cyan;
+    -webkit-text-stroke: 1px black;
+    border-color:black;
+  }
+
+  header {
+    border-bottom: 2px solid #eee;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  header a {
+    text-decoration: none;
+    color: #333;
+  }
