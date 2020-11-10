@@ -188,6 +188,7 @@ h3{
     border: orange 2px solid;
     border-radius: 1.1vh;
     outline: none;
+    margin:auto;
     
     /*Forma y propiedades del texto*/
     font-family: 'Lato', sans-serif;
@@ -205,6 +206,7 @@ h3{
     border: white 2px solid;
     border-radius: 1.1vh;
     outline: none;
+    margin:auto;
     
     /*Forma y propiedades del texto*/
     font-family: 'Lato', sans-serif;
@@ -212,4 +214,5 @@ h3{
     -webkit-text-stroke: 0.1px white;
     font-weight: 700;
     font-size: 2vh;
+
 }
