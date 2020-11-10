@@ -56,6 +56,7 @@
                 <div>
                      <label for="label"><h2><?php $nombre = $fila["NOMBRE_RECETA"]; echo "$nombre";?></h2><p><?php $descripcion = $fila["DESCRIPCION"]; echo "$descripcion";?></p> 
                     
+
                      <form method="POST" action="Pagina_Receta.php">
                         <input type="hidden" name="receta" value="<?php echo htmlspecialchars($nombre);?>">
                         <input type="submit" value="Ver receta">
@@ -76,6 +77,7 @@
                     <img id="imagen" src="tumbleweed.png">
                     </div>
                     <a href="index.html"> Volver al menú de búsqueda </a>
+
                     <?php
                 }
                 ?>

@@ -16,7 +16,7 @@ h1{
     /*Forma del texto*/
     font-family: 'Patua One', cursive;
     font-weight: 300;
-    font-size: 8vh;
+    font-size: 10vh;
     color:black;
     -webkit-text-stroke: 0.5px cyan;
 
@@ -171,7 +171,7 @@ h3{
     color: white;
     -webkit-text-stroke: 0.1px white;
     font-weight: 700;
-    font-size: 2.7vh;
+    font-size: 2vh;
 }
 
 #boton_cen{
