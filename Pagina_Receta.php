@@ -15,7 +15,7 @@
 
         <script>
         function menu(){
-            window.location.assign("http://localhost/Pagina/index.html");
+            window.location.assign("index.html");
         }
         </script>
 
@@ -52,11 +52,12 @@
 
          $procedimiento = $fila["PROCEDIMIENTO"];
 
+         $id = $fila["ID_RECETA"];
         ?>
 
         <h1><?php echo "$tituloreceta"; ?></h1>
 
-        <img src="imagenes_prueba/default.jpg" id="imagen1">
+        <img src="imagen_recetas/<?php echo "$id" ?>.jpg" id="imagen1">
         
         <p id="comentario"><?php echo "$descripcion"; ?></p>
         
@@ -96,6 +97,7 @@
 
             $sugerencia[$i] = $fila['NOMBRE_RECETA'];
 
+            $sugerenciaid[$i] = $fila['ID_RECETA'];
             $i++;
         }
 
@@ -104,13 +106,13 @@
 
             <div>
                 <label for="label1">
-                <img src="imagenes_prueba/default.jpg" class="imagen2">
+                <img src="imagen_recetas/<?php echo "$sugerenciaid[0]" ?>.jpg" class="imagen2">
                 </label>
                 <label for="boton_cen">
-                <img id="imagen2_cen" src="imagenes_prueba/default.jpg" class="imagen2">
+                <img id="imagen2_cen" src="imagen_recetas/<?php echo "$sugerenciaid[1]" ?>.jpg" class="imagen2">
                 </label>
                 <label for="label3">
-                <img src="imagenes_prueba/default.jpg" class="imagen2">
+                <img src="imagen_recetas/<?php echo "$sugerenciaid[2]" ?>.jpg" class="imagen2">
                 </label>
             </div>
             <div>
