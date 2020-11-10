@@ -124,7 +124,7 @@
             </div>
             
 
-            <input type="button" class="boton" value="Volver al menú de búsqueda" onclick="menu()">
+            <input type="button" id="boton" value="Volver al menú de búsqueda" onclick="menu()">
 
         </div>
 

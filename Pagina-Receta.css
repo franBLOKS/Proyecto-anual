@@ -178,3 +178,38 @@ h3{
     margin-left: 2vh;
     margin-right: 2vh;
 }
+
+#botonabajo{
+	/*tamaño del boton*/
+    width: 25vh;
+
+    /*Propiedades del boton*/
+    background-color: black;
+    border: orange 2px solid;
+    border-radius: 1.1vh;
+    outline: none;
+    
+    /*Forma y propiedades del texto*/
+    font-family: 'Lato', sans-serif;
+    color: rgb(27, 27, 27);
+    font-weight: 700;
+    font-size: 2.7vh;
+}
+
+#botonabajo:hover{
+    /*tamaño del boton*/
+    width: 25vh;
+
+    /*Propiedades del boton*/
+    background-color: black;
+    border: white 2px solid;
+    border-radius: 1.1vh;
+    outline: none;
+    
+    /*Forma y propiedades del texto*/
+    font-family: 'Lato', sans-serif;
+    color: white;
+    -webkit-text-stroke: 0.1px white;
+    font-weight: 700;
+    font-size: 2vh;
+}
