@@ -92,7 +92,6 @@ input[value="Ver receta"]{
                 /*Ubicacion*/
                 margin-top:3vh;
                 margin-left:3vh;
-                margin-bottom: 500vh;
                 display: inline-block;
 
                 /*Propiedades del texto*/
@@ -111,6 +110,30 @@ input[value="Ver receta"]{
                 user-select: none;
                 outline: none;
                 background-color: #ECE20F;
+}
+
+input[value="Ver receta"]:hover{
+    /*Ubicacion*/
+                margin-top:3vh;
+                margin-left:3vh;
+                display: inline-block;
+
+                /*Propiedades del texto*/
+                font-family: 'Lato', sans-serif;
+                color:yellow;
+                -webkit-text-stroke: 0.5px yellow;
+
+                /*bordes*/
+                border: 1.05vh outset rgb(236, 226, 15);
+                border-radius: 1.1vh;
+                padding-left:1vh;
+                padding-right:1vh;
+
+
+                /*color del texto y del fondo*/
+                user-select: none;
+                outline: none;
+                background-color: black;
 }
 
 .boton{
