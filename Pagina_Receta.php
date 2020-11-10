@@ -5,7 +5,7 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;1,100;1,300;1,400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="Pagina_Receta.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="Pagina-Receta.css" type="text/css">
         <meta charset="utf-8">
         <title>Receta</title>
         
