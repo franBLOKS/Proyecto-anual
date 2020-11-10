@@ -179,16 +179,15 @@ h3{
     margin-right: 2vh;
 }
 
-#botonabajo{
+input[value="Volver al menú de búsqueda"]{
 	/*tamaño del boton*/
-    width: 25vh;
+    width: 35vh;
 
     /*Propiedades del boton*/
     background-color: black;
     border: orange 2px solid;
     border-radius: 1.1vh;
     outline: none;
-    margin:auto;
     
     /*Forma y propiedades del texto*/
     font-family: 'Lato', sans-serif;
@@ -197,7 +196,7 @@ h3{
     font-size: 2.7vh;
 }
 
-#botonabajo:hover{
+input[value="Volver al menú de búsqueda"]:hover{
     /*tamaño del boton*/
     width: 25vh;
 
@@ -206,8 +205,7 @@ h3{
     border: white 2px solid;
     border-radius: 1.1vh;
     outline: none;
-    margin:auto;
-    
+
     /*Forma y propiedades del texto*/
     font-family: 'Lato', sans-serif;
     color: white;
