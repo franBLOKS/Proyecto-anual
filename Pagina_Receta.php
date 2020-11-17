@@ -13,6 +13,12 @@
 
     <body>
 
+        <script>
+        function menu(){
+            window.location.assign("index.html");
+        }
+        </script>
+
         <?php
 
             $servername = "localhost";
@@ -46,11 +52,12 @@
 
          $procedimiento = $fila["PROCEDIMIENTO"];
 
+         $id = $fila["ID_RECETA"];
         ?>
 
         <h1><?php echo "$tituloreceta"; ?></h1>
 
-        <img src="imagenes_prueba/default.jpg" id="imagen1">
+        <img src="imagen_recetas/<?php echo "$id" ?>.jpg" id="imagen1">
         
         <p id="comentario"><?php echo "$descripcion"; ?></p>
         
@@ -80,19 +87,45 @@
 
         <?php 
         
-        $consulta = "SELECT * FROM receta WHERE INGREDIENTES LIKE '%$ingredientes%'"; 
+        $consulta = "SELECT * FROM receta ORDER BY RAND() LIMIT 3;"; 
         
-        $datos = mysqli_query($conexion,$consulta);
+        $datos = mysqli_query($conexion,$consulta); 
+        
+        $i=0;
+        
+        while($fila=mysqli_fetch_array($datos)){
+
+            $sugerencia[$i] = $fila['NOMBRE_RECETA'];
+
+            $sugerenciaid[$i] = $fila['ID_RECETA'];
+            $i++;
+        }
+
         
         ?>
 
             <div>
-                <label for="label1"><img src="imagenes_prueba/default.jpg" class="imagen2"></label><label for="boton_cen"><img id="imagen2_cen" src="imagenes_prueba/default.jpg" class="imagen2"></label><label for="label3"><img src="imagenes_prueba/default.jpg" class="imagen2"></label>
+                <label for="label1">
+                <img src="imagen_recetas/<?php echo "$sugerenciaid[0]" ?>.jpg" class="imagen2">
+                </label>
+                <label for="boton_cen">
+                <img id="imagen2_cen" src="imagen_recetas/<?php echo "$sugerenciaid[1]" ?>.jpg" class="imagen2">
+                </label>
+                <label for="label3">
+                <img src="imagen_recetas/<?php echo "$sugerenciaid[2]" ?>.jpg" class="imagen2">
+                </label>
             </div>
             <div>
-                <input type="submit" value="título receta 1" id="label1" class="boton"><input type="submit" id="boton_cen" value="título receta 2" id="boton_cen" class="boton" class="boton_cen"><input type="button" value="título receta 3" id="label3" class="boton">
+                <form method="POST" action="Pagina_Receta.php">
+                <input type="submit" name="receta" value="<?php echo $sugerencia[0]; ?>" id="label1" class="boton">
+                <input type="submit" name="receta" id="boton_cen" value="<?php echo $sugerencia[1]; ?>" id="boton_cen" class="boton" class="boton_cen">
+                <input type="submit" name="receta" value="<?php echo $sugerencia[2]; ?>" id="label3" class="boton">
+                </form>
             </div>
             
+
+            <input type="button" id="boton" value="Volver al menú de búsqueda" onclick="menu()">
+
         </div>
 
     </body>

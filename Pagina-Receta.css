@@ -171,10 +171,46 @@ h3{
     color: white;
     -webkit-text-stroke: 0.1px white;
     font-weight: 700;
-    font-size: 2.7vh;
+    font-size: 2vh;
 }
 
 #boton_cen{
     margin-left: 2vh;
     margin-right: 2vh;
+}
+
+input[value="Volver al menú de búsqueda"]{
+	/*tamaño del boton*/
+    width: 35vh;
+
+    /*Propiedades del boton*/
+    background-color: black;
+    border: orange 2px solid;
+    border-radius: 1.1vh;
+    outline: none;
+    
+    /*Forma y propiedades del texto*/
+    font-family: 'Lato', sans-serif;
+    color: rgb(27, 27, 27);
+    font-weight: 700;
+    font-size: 2.7vh;
+}
+
+input[value="Volver al menú de búsqueda"]:hover{
+    /*tamaño del boton*/
+    width: 25vh;
+
+    /*Propiedades del boton*/
+    background-color: black;
+    border: white 2px solid;
+    border-radius: 1.1vh;
+    outline: none;
+
+    /*Forma y propiedades del texto*/
+    font-family: 'Lato', sans-serif;
+    color: white;
+    -webkit-text-stroke: 0.1px white;
+    font-weight: 700;
+    font-size: 2vh;
+
 }
